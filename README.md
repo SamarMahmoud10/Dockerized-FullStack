@@ -77,24 +77,6 @@ Built with absolute immutability, defensive sequencing, and self-healing configu
     *   `public`: Connects external reverse proxies and user traffic safely into the UI and API gateways.
     *   `private`: A completely blind, inner network tier. It seals off the Database cluster (`MariaDB`) from the outside internet, restricting all TCP/IP traffic exclusively to internal API container requests.
 
----
-
-Create a global `.env` file in the root directory to define your deployment ports and runtime environment hooks:
-
-```env
-# Network Routing Ports
-FRONTEND_PORT=3000
-BACKEND_PORT=80
-
-# System Environment State
-NODE_ENV=development
-
-# Database Cluster Topology
-DATABASE_HOST=db
-DATABASE_USER=root
-DATABASE_DB=my_database
-MYSQL_DATABASE=my_database
-```
 
 ### Prerequisites
 1. Ensure [Docker Desktop / Engine](https://docker.com) is installed and running.
