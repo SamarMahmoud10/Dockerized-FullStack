@@ -8,7 +8,7 @@ WORKDIR /code
 
 ARG PORT=80
 ENV PORT=$PORT
-EXPOSE $PORT 
+EXPOSE $PORT 9229 9230
 
 COPY package.json package-lock.json ./
 COPY .npmrc .yarnrc.yml ./
